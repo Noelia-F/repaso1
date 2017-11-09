@@ -1,6 +1,38 @@
 body {
 	font-family: arial, sans-serif;
 }
-.list {
+.list-info {
 	text-decoration: underline;
+}
+
+.list-info {
+	cursor: help;
+}
+
+.more-info {
+	border: 2px solid black;
+	background-color: #f8f8f8;
+	width: 400px;
+	height: 200px;
+	position: relative;
+}
+.more-info-html, .more-info-css, .more-info-js {
+	display: none;
+	position: absolute;
+	top: 180px;
+	left: 190px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.info-html:hover .more-info-html {
+	display:block;
+}
+
+.info-css:hover .more-info-css {
+	display:block;
+}
+
+.info-js:hover .more-info-js {
+	display:block;
 }
